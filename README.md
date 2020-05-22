@@ -1,4 +1,5 @@
-# Dashtag
+# phoenix-starter
+Bare bones boiler plate Phoenix starter kit
 
 To start your Phoenix server:
 
