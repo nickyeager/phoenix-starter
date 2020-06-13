@@ -45,7 +45,13 @@ defmodule Dashtag.MixProject do
       {:jason, "~> 1.0"},
       {:plug_cowboy, "~> 2.0"},
       {:pow, "~> 1.0.19"},
-      {:bamboo, "~> 1.5"}
+      {:bamboo, "~> 1.5"},
+      {:timex, "~> 3.5"},
+      {:arc_ecto, "~> 0.11.3"},
+      {:ex_aws, "~> 2.0"},
+      {:ex_aws_s3, "~> 2.0"},
+      {:poison, "~> 3.1"},
+      {:sweet_xml, "~> 0.6"}
     ]
   end
 
