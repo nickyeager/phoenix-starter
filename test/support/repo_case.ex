@@ -1,23 +1,23 @@
-defmodule Dashtag.RepoCase do
+defmodule PhoenixStarter.RepoCase do
   use ExUnit.CaseTemplate
 
   using do
     quote do
-      alias Dashtag.Repo
+      alias PhoenixStarter.Repo
 
       import Ecto
       import Ecto.Query
-      import Dashtag.RepoCase
+      import PhoenixStarter.RepoCase
 
       # and any other stuff
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Dashtag.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhoenixStarter.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Dashtag.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(PhoenixStarter.Repo, {:shared, self()})
     end
 
     :ok

@@ -1,4 +1,4 @@
-defmodule Dashtag.Repo.Migrations.AddPowInvitationToUsers do
+defmodule PhoenixStarter.Repo.Migrations.AddPowInvitationToUsers do
   use Ecto.Migration
 
   def change do
