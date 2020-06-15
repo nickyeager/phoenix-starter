@@ -75,6 +75,14 @@
     <orderEntry type="library" name="gettext" level="project" />
     <orderEntry type="library" name="jason" level="project" />
     <orderEntry type="library" name="plug_cowboy" level="project" />
+    <orderEntry type="library" name="pow" level="project" />
+    <orderEntry type="library" name="bamboo" level="project" />
+    <orderEntry type="library" name="timex" level="project" />
+    <orderEntry type="library" name="arc_ecto" level="project" />
+    <orderEntry type="library" name="ex_aws" level="project" />
+    <orderEntry type="library" name="ex_aws_s3" level="project" />
+    <orderEntry type="library" name="poison" level="project" />
+    <orderEntry type="library" name="sweet_xml" level="project" />
     <orderEntry type="library" name="plug" level="project" />
     <orderEntry type="library" name="telemetry" level="project" />
     <orderEntry type="library" name="ex_doc" level="project" />
@@ -87,27 +95,16 @@
     <orderEntry type="library" name="benchee_json" level="project" />
     <orderEntry type="library" name="decimal" level="project" />
     <orderEntry type="library" name="connection" level="project" />
+    <orderEntry type="library" name="floki" level="project" />
     <orderEntry type="library" name="earmark" level="project" />
     <orderEntry type="library" name="file_system" level="project" />
     <orderEntry type="library" name="cowboy" level="project" />
     <orderEntry type="library" name="hackney" level="project" />
     <orderEntry type="library" name="kadabra" level="project" />
     <orderEntry type="library" name="x509" level="project" />
-    <orderEntry type="library" name="mime" level="project" />
-    <orderEntry type="library" name="plug_crypto" level="project" />
-    <orderEntry type="library" name="floki" level="project" />
-    <orderEntry type="library" name="pow" level="project" />
     <orderEntry type="library" name="credo" level="project" />
-    <orderEntry type="library" name="Elixir 1.9.4" level="application" />
-    <orderEntry type="library" name="bamboo" level="project" />
     <orderEntry type="library" name="ex_machina" level="project" />
     <orderEntry type="library" name="excoveralls" level="project" />
-    <orderEntry type="library" name="timex" level="project" />
-    <orderEntry type="library" name="arc_ecto" level="project" />
-    <orderEntry type="library" name="ex_aws" level="project" />
-    <orderEntry type="library" name="ex_aws_s3" level="project" />
-    <orderEntry type="library" name="poison" level="project" />
-    <orderEntry type="library" name="sweet_xml" level="project" />
     <orderEntry type="library" name="tzdata" level="project" />
     <orderEntry type="library" name="combine" level="project" />
     <orderEntry type="library" name="benchfella" level="project" />
@@ -123,5 +120,7 @@
     <orderEntry type="library" name="exjsx" level="project" />
     <orderEntry type="library" name="json" level="project" />
     <orderEntry type="library" name="jazz" level="project" />
+    <orderEntry type="library" name="mime" level="project" />
+    <orderEntry type="library" name="plug_crypto" level="project" />
   </component>
 </module>

@@ -18,6 +18,10 @@ defmodule DashtagWeb.Router do
     plug :accepts, ["json"]
   end
 
+  pipeline :admin do
+    plug DashtagWeb.EnsureRolePlug, :admin
+  end
+
   # BEGIN added for Pow
   pipeline :protected do
     plug Pow.Plug.RequireAuthenticated,
@@ -26,7 +30,7 @@ defmodule DashtagWeb.Router do
 
   pipeline :not_authenticated do
     plug Pow.Plug.RequireNotAuthenticated,
-         error_handler: Pow.Phoenix.AuthErrorHandler
+         error_handler: Pow.Phoenix.PlugErrorHandler
   end
 
   scope "/" do
@@ -36,17 +40,9 @@ defmodule DashtagWeb.Router do
     pow_extension_routes()
   end
 
-
   scope "/", DashtagWeb do
-    pipe_through [:browser, :not_authenticated]
-
+    pipe_through [:browser]
     get "/", PageController, :index
-    live "/gallery", GalleryLive
-    live "/counter", CounterLive
-  end
-
-  scope "/", DashtagWeb do
-    pipe_through [:browser, :protected]
   end
 
   scope "/api/v1", DashtagWeb do
