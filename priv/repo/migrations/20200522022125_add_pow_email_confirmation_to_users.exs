@@ -1,4 +1,4 @@
-defmodule Dashtag.Repo.Migrations.AddPowEmailConfirmationToUsers do
+defmodule PhoenixStarter.Repo.Migrations.AddPowEmailConfirmationToUsers do
   use Ecto.Migration
 
   def change do

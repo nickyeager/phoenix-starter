@@ -1,15 +1,15 @@
 use Mix.Config
 
 # Configure your database
-config :dashtag, Dashtag.Repo,
+config :phoenixstarter, PhoenixStarter.Repo,
   username: "postgres",
   password: "postgres",
-  database: "dashtag_dev",
+  database: "phoenixstarter_dev",
   hostname: "localhost",
   show_sensitive_data_on_connection_error: true,
   pool_size: 10
 
-#config :dashtag, DashtagWeb.Pow.Mailer,
+#config :phoenixstarter, PhoenixStarterWeb.Pow.Mailer,
 #       adapter: Bamboo.SendGridAdapter,
 #       api_key: "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",
 #       hackney_opts: [
@@ -22,7 +22,7 @@ config :dashtag, Dashtag.Repo,
 # The watchers configuration can be used to run external
 # watchers to your application. For example, we use it
 # with webpack to recompile .js and .css sources.
-config :dashtag, DashtagWeb.Endpoint,
+config :phoenixstarter, PhoenixStarterWeb.Endpoint,
   http: [port: 4000],
   debug_errors: true,
   code_reloader: true,
@@ -62,13 +62,13 @@ config :dashtag, DashtagWeb.Endpoint,
 # different ports.
 
 # Watch static and templates for browser reloading.
-config :dashtag, DashtagWeb.Endpoint,
+config :phoenixstarter, PhoenixStarterWeb.Endpoint,
   live_reload: [
     patterns: [
       ~r"priv/static/.*(js|css|png|jpeg|jpg|gif|svg)$",
       ~r"priv/gettext/.*(po)$",
-      ~r"lib/dashtag_web/(live|views)/.*(ex)$",
-      ~r"lib/dashtag_web/templates/.*(eex)$"
+      ~r"lib/phoenixstarter_web/(live|views)/.*(ex)$",
+      ~r"lib/phoenixstarter_web/templates/.*(eex)$"
     ]
   ]
 

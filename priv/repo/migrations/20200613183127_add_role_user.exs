@@ -1,4 +1,4 @@
-defmodule Dashtag.Repo.Migrations.AddRoleUser do
+defmodule PhoenixStarter.Repo.Migrations.AddRoleUser do
   use Ecto.Migration
 
   def change do

@@ -1,4 +1,4 @@
-defmodule DashtagWeb.ChannelCase do
+defmodule PhoenixStarterWeb.ChannelCase do
   @moduledoc """
   This module defines the test case to be used by
   channel tests.
@@ -11,7 +11,7 @@ defmodule DashtagWeb.ChannelCase do
   we enable the SQL sandbox, so changes done to the database
   are reverted at the end of every test. If you are using
   PostgreSQL, you can even run database tests asynchronously
-  by setting `use DashtagWeb.ChannelCase, async: true`, although
+  by setting `use PhoenixStarterWeb.ChannelCase, async: true`, although
   this option is not recommended for other databases.
   """
 
@@ -23,15 +23,15 @@ defmodule DashtagWeb.ChannelCase do
       use Phoenix.ChannelTest
 
       # The default endpoint for testing
-      @endpoint DashtagWeb.Endpoint
+      @endpoint PhoenixStarterWeb.Endpoint
     end
   end
 
   setup tags do
-    :ok = Ecto.Adapters.SQL.Sandbox.checkout(Dashtag.Repo)
+    :ok = Ecto.Adapters.SQL.Sandbox.checkout(PhoenixStarter.Repo)
 
     unless tags[:async] do
-      Ecto.Adapters.SQL.Sandbox.mode(Dashtag.Repo, {:shared, self()})
+      Ecto.Adapters.SQL.Sandbox.mode(PhoenixStarter.Repo, {:shared, self()})
     end
 
     :ok
