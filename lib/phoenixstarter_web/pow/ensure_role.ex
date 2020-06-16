@@ -1,5 +1,5 @@
 # lib/my_app_web/ensure_role_plug.ex
-defmodule DashTagWeb.EnsureRolePlug do
+defmodule PhoenixStarterWeb.EnsureRolePlug do
   @moduledoc """
   This plug ensures that a user has a particular role.
 
@@ -13,7 +13,7 @@ defmodule DashTagWeb.EnsureRolePlug do
   """
   import Plug.Conn, only: [halt: 1]
 
-  alias DashTagWeb.Router.Helpers, as: Routes
+  alias PhoenixStarterWeb.Router.Helpers, as: Routes
   alias Phoenix.Controller
   alias Plug.Conn
   alias Pow.Plug
